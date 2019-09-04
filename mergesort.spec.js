@@ -1,4 +1,4 @@
-describe('Split Array function', function() {
+describe('splitArray function', function() {
     it('is able to split an array into two halves', function() {
         let arr = [3,5,1,2,7,4,8,6]
         split(arr)
@@ -7,11 +7,15 @@ describe('Split Array function', function() {
     })
 })
 
-describe('Merge function', function(){
+describe('merge function', function(){
     it('is able to merge two sorted arrays into one sorted array', function(){
         let arr = [[1,3,4,6],[7,9,10,12]]
         merge(arr)
         expect(arr).toEqual([1,3,4,6,7,9,10,12])
         expect(arr.length).toEqual(8)
     })
+})
+
+describe('mergeSort function', function(){
+    
 })
