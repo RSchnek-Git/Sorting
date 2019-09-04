@@ -28,9 +28,9 @@ describe('mergeSort function', function(){
         expect(mergeSort(arr)).toEqual([1, 2, 3, 4, 7, 8]);
         expect(arr.length).toEqual(6)
     });
-    it('sorts an array with muliple passes', function () {
-        let arr = [55, 3, 28, 27, 1, 6]
-        expect(mergeSort(arr)).toEqual([1, 3, 6, 27, 28, 55]);
-        expect(arr.length).toEqual(6)
+    it('sorts an array that is odd-sized', function () {
+        let arr = [55, 3, 28, 27, 1]
+        expect(mergeSort(arr)).toEqual([1, 3, 27, 28, 55]);
+        expect(arr.length).toEqual(5)
     });
 })
